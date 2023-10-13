@@ -5,29 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link href="outlines.css" rel="stylesheet" />
     <title>Интернет магазин</title>
 </head>
 <body>
-<header>
-    <div>Logo</div>
-    <nav>
-        <ul>
-            <li>
-                <a>Home</a>
+<header class="header">
+    <div class="header__logo">Logo</div>
+    <nav class="nav">
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a class="nav__link">Home</a>
             </li>
-            <li>
-                <a>Items</a>
+            <li class="nav__item">
+                <a class="nav__link">Items</a>
             </li>
-            <li>
-                <a>PageLoad</a>
+            <li class="nav__item">
+                <a class="nav__link">PageLoad</a>
             </li>
         </ul>
     </nav>
 </header>
-<main>
-    <section>
-        <pre>
+<main class="main">
+    <section class="greeting">
+        <pre class="greeting__ascii">
               ___ ___         .__  .__
              /   |   \   ____ |  | |  |   ____
             /    ~    \_/ __ \|  | |  |  /  _ \
@@ -35,17 +38,28 @@
              \___|_  /  \___  >____/____/\____/
                    \/       \/
         </pre>
-        <pre>
-            <code>
-                &lt;h1&gt;Добро пожаловать&lt;/h1&gt;
+        <pre class="greeting__code">
+            <code class="code">
+                &lt;h1 class="title"&gt;Добро пожаловать&lt;/h1&gt;
             </code>
         </pre>
     </section>
-    <section>
-        <p>Интернет-магазин по продаже кроссовок. Здесь вы можете найти подходящую для себя пару. Весь ассортимент доступен во вкладке <strong>Items</strong></p>
+    <section class="description">
+        <p class="description__text">Интернет-магазин по продаже кроссовок. <br/> Здесь вы можете найти подходящую для себя пару. <br/> Весь ассортимент доступен во вкладке <strong class="strong description__text_wrong-tab">Home</strong> <strong class="strong description__text_right-tab">Items</strong></p>
+        <div class="cards">
+            <div class="card">
+                <h2 class="card__name">Nike Air Jordan 1</h2>
+                <div class="card__image-wrapper">
+                    <img src="img/nike_air_jordan_1.png" alt="sneakers" class="card__image" />
+                </div>
+                <div class="card__info">
+                    <p class="card__text">Кроссовки Nike Air Jordan 1 - это баскетбольные классические модели из кожи, разработанные специально для знаменитого спортсмена Майкла Джордана. Впервые релиз кроссов вышел в 1985 году. Силуэт был создан с учетом особенностей стопы баскетболиста. Фирменное изделие на шнуровке имеет закругленную форму носка, мягкий текстильный язычок, а также вставки.</p>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <h1>Contacts:</h1>
     <ul>
         <li>https://t.me/eugeny_pakhalyuk</li>

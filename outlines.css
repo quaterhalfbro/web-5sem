@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e7cfaf;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav__link {
+    text-transform: uppercase;
+}
+
+.description__text {
+    line-height: 20px;
+    text-indent: 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.description__text_wrong-tab {
+    color: #da4545;
+    text-decoration: line-through;
+}
+
+.description__text_right-tab {
+    text-decoration: underline;
+}
+
+.card {
+    width: 300px;
+    background-color: #e7cfaf;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0 0 #000000;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.strong {
+    font-size: 16px;
+    font-weight: bold;
+}
